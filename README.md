@@ -7,3 +7,4 @@ I have yet to compile the scraped data into a single function.  I also have not 
 
 These additions will be forthcoming.
 
+https://paulkazalski.github.io/web-scraping-challenge/
