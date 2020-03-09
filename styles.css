@@ -1,0 +1,157 @@
+/* *****            ***** */
+/* *****  BODY CSS  ***** */
+/* *****            ***** */
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background-color: white;
+}
+
+/* This is the body that I have defined.  It was going to have more features, but
+   I decided I didn't need those attributes.  Now, it's just some body. */
+.body1 {
+  background: whitesmoke;
+}
+
+/* *****               ***** */
+/* ***** CONTAINER CSS ***** */
+/* *****               ***** */
+
+/* This is the container for the Top Banner. The Navbar will go here. */
+.top {
+  height: 200px;
+  width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  background: lightgray;
+  color: darkblue;
+  text-align:center;
+  padding-top: 50px;
+}
+
+.top h1 {
+  margin-left:auto;
+  margin-right: auto;
+}
+
+/* Defines the "home" anchor, which must look different from the others */
+.gohome {
+  background-color: mediumaquamarine;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.featimg{
+  padding-top:50px;
+}
+
+.news {
+  background: white;
+  margin-top: 20px;
+  height: 200px;
+}
+
+.row {
+  align-content: center;
+
+}
+
+.tweet {
+  padding: 5px;
+  background-color:lightgray;
+  margin-bottom:20px;
+  text-align:justify;
+}
+
+.featured {
+  background: white;
+  margin: 25px;
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+/* This is the smaller container on the right side of the home and visual pages.
+There is a default position and a media query position below. */
+.factoids {
+  height: 600px;
+  width:400px;
+  background: white;
+  padding: 20px;
+  margin: 25px;
+  
+}
+
+.hemisphere {
+  height: 1850px;
+  width: 500px;
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hemi {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 25px;
+
+}
+
+
+
+/* *****            ***** */
+/* ***** ITEMS  CSS ***** */
+/* *****            ***** */
+
+/* Styling the header, giving it a height, a background color,  a bottom border and some top padding */
+.header {
+  height: 80px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: rgba(0, 0, 0, 0.11);
+  border-bottom-style: solid;
+}
+
+/* Defines the text of the header */
+.header h1 {
+  font-size: 40px;
+  color: darkgray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Defines the border around a chosen image */
+.img1 {
+  width: 175px;
+  height: 175px;
+  border: 3px solid mediumaquamarine;
+}
+
+.container4 li a img {
+  width: 350px;
+  height: 300px;
+}
+
+.table-bordered {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+
+
+h2 {
+  font-size: 40px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+

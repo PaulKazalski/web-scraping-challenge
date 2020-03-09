@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body class="body1">
+
+  <div class="top">
+    <h1>Welcome to the Mars Exploration Database!</h1>
+        <div class="gohome">
+            <a href="index.html"><strong>Data Scrape</strong></a>
+        </div>
+  </div>
+
+  <div class="news">
+    <h1>Latest Mars News</h1>
+    <h3 id = "newstitle"></h3>
+    <p id="article"></p>
+  </div>
+
+  <div class="row">
+      <div class="featured">
+        <header class = "header">
+          <h3><strong>Featured Image</strong> </h3>   
+          <div id='featimage' class="featimg"></div>
+        </header>
+            
+      </div>
+  
+      <div class="factoids">
+
+        <header class="header">
+          <h3><strong>Factoids</strong> </h3>
+        </header>    
+        <div id="latesttweet" class = "tweet"></div>
+        
+        <table class = "table-bordered">
+          <th scope="col">Interesting Facts</th>
+          <tbody>
+            <tr><td id = "fact1"></td></tr>
+            <tr><td id = "fact2"></td></tr>
+            <tr><td id = "fact3"></td></tr>
+            <tr><td id = "fact4"></td></tr>
+            <tr><td id = "fact5"></td></tr>
+            <tr><td id = "fact6"></td></tr>
+            <tr><td id = "fact7"></td></tr>
+            <tr><td id = "fact8"></td></tr>
+            <tr><td id = "fact9"></td></tr>
+          </tbody>
+        </table>
+
+      </div>
+      
+  </div>
+
+  <div class="hemisphere">
+    <header class="header">
+      <h3><strong>Hemisphere</strong> </h3>
+    </header>
+
+    <div class = "hemi" id = 'image1'></div>
+    <div class = "hemi" id = 'image2'></div>
+    <div class = "hemi" id = 'image3'></div>
+    <div class = "hemi" id = 'image4'></div>
+
+  </div>
+
+</body>
+
+<script>
+  var title = "Virginia Middle School Student Earns Honor of Naming NASA's Next Mars Rover";
+  var article = "NASA chose a seventh-grader from Virginia as winner of the agency's _Name the Rover_ essay contest. Alexander Mather's entry for _Perseverance_ was voted tops among 28,000 entries. ";
+  var tweet = 'InSight sol 452 (2020-03-05) low -94.2ºC (-137.7ºF) high -9.2ºC (15.4ºF)\nwinds from the SSW at 6.5 m/s (14.5 mph) gusting to 19.6 m/s (43.9 mph)\npressure at 6.30 hPa… https://t.co/ezCwzIJrek';
+  
+  var firstfact = 'Equatorial Diameter:6,792 km';
+  var secondfact = 'I am the second';
+  var thirdfact = 'I am the third';
+  var fourthfact = 'I am the foruth';
+  var fifthfact = 'I am the fifth';
+  var sixthfact = 'I am the sixth';
+  var seventhfact = 'I am the seventh';
+  var eigthfact = 'I am the eigth';
+  var ninthfact = 'I am the ninth';
+
+  var featsrc = "https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA18058-1920x1200.jpg";
+  var firstsrc = "http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg";  
+  var secondsrc = "http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg";  
+  var thirdsrc = "http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg";  
+  var fourthsrc = "http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg";  
+
+  var featimg = '<img src = ' + featsrc + ' alt = "The feature figure" height = 420px width = 560px>';
+  var firstimg = '<img src = ' + firstsrc + ' alt = "The first figure" height = 400px width = 400px>';
+  var secondimg = '<img src = ' + secondsrc + ' alt = "The second figure" height = 400px width = 400px>';
+  var thirdimg = '<img src = ' + thirdsrc + ' alt = "The third figure" height = 400px width = 400px>';
+  var fourthimg = '<img src = ' + fourthsrc + ' alt = "The fourth figure" height = 400px width = 400px>';
+
+  document.getElementById("article").innerHTML = article;
+  document.getElementById("newstitle").innerHTML = title;
+  document.getElementById("latesttweet").innerHTML = tweet;
+
+  document.getElementById("fact1").innerHTML = firstfact;
+  document.getElementById("fact2").innerHTML = secondfact;
+  document.getElementById("fact3").innerHTML = thirdfact;
+  document.getElementById("fact4").innerHTML = fourthfact;
+  document.getElementById("fact5").innerHTML = fifthfact;
+  document.getElementById("fact6").innerHTML = sixthfact;
+  document.getElementById("fact7").innerHTML = seventhfact;
+  document.getElementById("fact8").innerHTML = eigthfact;
+  document.getElementById("fact9").innerHTML = ninthfact;
+
+  
+  document.getElementById('featimage').innerHTML = featimg;
+  document.getElementById('image1').innerHTML = firstimg;
+  document.getElementById('image2').innerHTML = secondimg;
+  document.getElementById('image3').innerHTML = thirdimg;
+  document.getElementById('image4').innerHTML = fourthimg;
+
+</script>
+
+</html>
